@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  kafka:
+    image: johnnypark/kafka-zookeeper
+    container_name: $CONTAINER_NAME
+    environment:
+      ADVERTISED_HOST: $CONTAINER_NAME
+      NUM_PARTITIONS: 3
+    ports:
+      - 2181:2181
+      - 9092:9092
+
+networks:
+  default:
+    external:
+      name: cluster-network

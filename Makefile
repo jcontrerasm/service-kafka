@@ -1,7 +1,7 @@
 ## ------------------------------------- ENVIRONMENT -------------------------------------
 
 SERVICE_NAME   = kafka
-CONTAINER_NAME = $(kafka)-service
+CONTAINER_NAME = $(SERVICE_NAME)-container
 
 ## ------------------------------------- TASK ------------------------------------------
 
